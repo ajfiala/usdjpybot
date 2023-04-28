@@ -9,6 +9,7 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
+      - ls 
       - docker build -t usdjpybot:latest 908756929947.dkr.ecr.ap-southeast-1.amazonaws.com/usdjpybot .
   post_build:
     commands:
