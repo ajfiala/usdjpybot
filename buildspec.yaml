@@ -15,7 +15,7 @@ phases:
   post_build:
     commands:
       - echo Pushing the Docker image...
-      - docker push docker push 908756929947.dkr.ecr.ap-southeast-1.amazonaws.com/usdjpybot:latest
+      - docker push 908756929947.dkr.ecr.ap-southeast-1.amazonaws.com/usdjpybot:latest
       - echo Creating imagedefinitions.json file...
       - echo '[{"name":"usdjpybot","imageUri":"908756929947.dkr.ecr.ap-southeast-1.amazonaws.com/usdjpybot:latest"}]' > imagedefinitions.json
 artifacts:
