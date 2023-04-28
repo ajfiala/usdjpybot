@@ -10,7 +10,8 @@ phases:
     commands:
       - echo Building the Docker image...
       - ls 
-      - docker build -t usdjpybot:latest 908756929947.dkr.ecr.ap-southeast-1.amazonaws.com/usdjpybot .
+      - docker build -t usdjpybot .
+      - docker tag usdjpybot:latest 908756929947.dkr.ecr.ap-southeast-1.amazonaws.com/usdjpybot:latest
   post_build:
     commands:
       - echo Pushing the Docker image...
